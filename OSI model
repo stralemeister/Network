@@ -1,0 +1,10 @@
+MAC (Media Access Control) adresa
+- permanentna, fižička i jedinstvena adresa koju kreira proizvođač i dodeljuje je mrežnoj kartici (wired ili wireless kartica)
+- uređaj sa više mrežnih kartica (interfejsa) ima više MAC adresa (svaka kartica/interfejs ima svoju MAC adresu)
+- koristi se za identifikaciju uređaja unutar LAN-a
+- ifconfing/ipconfig - komanda koja izlistava sve mrežne interfejse (uređaj koji omogućava računaru da se konektuje na mrežu - wired ili wifi mrežna kartica)
+- promena MAC adresa (linux): - adresa se menja samo u RAM-u, čim se reastartuje računar, vratiće se originalna
+ifconfing <inerface_name> down - disable-ovanje interfejsa
+ifconfing <inerface_name> hw ether <new_MAC> - promena MAC adrese (mora da počne sa 00)
+ifconfing <inerface_name> up - enable-ovanje interfejsa
+-struktura MAC adrese:
